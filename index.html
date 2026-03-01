@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n_Automation_AGMA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            color: #00f2ea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .account-badge {
+            display: inline-block;
+            background: rgba(254, 44, 85, 0.15);
+            color: #fe2c55;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-top: 15px;
+            font-weight: 600;
+            border: 1px solid rgba(254, 44, 85, 0.3);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .menu-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #00f2ea;
+            box-shadow: 0 10px 30px rgba(0, 242, 234, 0.15);
+        }
+
+        .menu-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .menu-card h2 {
+            color: #00f2ea;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .menu-card p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+        }
+
+        .info-section {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-section h3 {
+            color: #00f2ea;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .info-section p {
+            color: #c0c0c0;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .feature-tag {
+            background: rgba(0, 242, 234, 0.1);
+            color: #00f2ea;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(0, 242, 234, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>n8n_Automation_AGMA</h1>
+            <p class="subtitle">TikTok Content Automation Platform</p>
+            <div class="account-badge">
+                🎵 @autopista_gma
+            </div>
+        </header>
+
+        <nav class="menu-grid">
+            <a href="terms.html" class="menu-card">
+                <div class="icon">📋</div>
+                <h2>Terms of Service</h2>
+                <p>Review the terms and conditions for using the automation platform, including user responsibilities and guidelines.</p>
+            </a>
+
+            <a href="privacy.html" class="menu-card">
+                <div class="icon">🔒</div>
+                <h2>Privacy Policy</h2>
+                <p>Learn how we collect, handle, and protect your data. Information about security and third-party services.</p>
+            </a>
+        </nav>
+
+        <section class="info-section">
+            <h3>ℹ️ About This Platform</h3>
+            <p>This private automation tool manages content publishing for the TikTok account <strong>@autopista_gma</strong> using the official TikTok API.</p>
+            <div class="features">
+                <span class="feature-tag">✓ Secure Storage</span>
+                <span class="feature-tag">✓ Real-time Updates</span>
+                <span class="feature-tag">✓ API Integration</span>
+                <span class="feature-tag">✓ Private Instance</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 n8n_Automation_AGMA. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
