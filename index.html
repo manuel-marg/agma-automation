@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>n8n_Automation_AGMA</title>
     <style>
+        :root {
+            --tiktok-cyan: #00f2ea;
+            --tiktok-pink: #fe2c55;
+            --tiktok-black: #000000;
+            --tiktok-white: #ffffff;
+            --tiktok-dark: #121212;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,8 +22,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #e0e0e0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            color: var(--tiktok-white);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -30,10 +38,24 @@
             margin-bottom: 60px;
         }
 
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 242, 234, 0.3), 0 0 80px rgba(254, 44, 85, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
         h1 {
-            color: #00f2ea;
+            color: var(--tiktok-white);
             font-size: 2.5rem;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .subtitle {
@@ -43,13 +65,13 @@
 
         .account-badge {
             display: inline-block;
-            background: rgba(254, 44, 85, 0.15);
-            color: #fe2c55;
+            background: linear-gradient(135deg, rgba(254, 44, 85, 0.2), rgba(0, 242, 234, 0.1));
+            color: var(--tiktok-pink);
             padding: 8px 20px;
             border-radius: 50px;
             margin-top: 15px;
             font-weight: 600;
-            border: 1px solid rgba(254, 44, 85, 0.3);
+            border: 1px solid rgba(254, 44, 85, 0.4);
         }
 
         .menu-grid {
@@ -74,8 +96,8 @@
         .menu-card:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.08);
-            border-color: #00f2ea;
-            box-shadow: 0 10px 30px rgba(0, 242, 234, 0.15);
+            border-color: var(--tiktok-cyan);
+            box-shadow: 0 10px 30px rgba(0, 242, 234, 0.2), 0 0 60px rgba(254, 44, 85, 0.1);
         }
 
         .menu-card .icon {
@@ -84,7 +106,7 @@
         }
 
         .menu-card h2 {
-            color: #00f2ea;
+            color: var(--tiktok-cyan);
             margin-bottom: 10px;
             font-size: 1.4rem;
         }
@@ -102,7 +124,7 @@
         }
 
         .info-section h3 {
-            color: #00f2ea;
+            color: var(--tiktok-cyan);
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
@@ -120,12 +142,12 @@
         }
 
         .feature-tag {
-            background: rgba(0, 242, 234, 0.1);
-            color: #00f2ea;
+            background: rgba(254, 44, 85, 0.15);
+            color: var(--tiktok-pink);
             padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.85rem;
-            border: 1px solid rgba(0, 242, 234, 0.2);
+            border: 1px solid rgba(254, 44, 85, 0.3);
         }
 
         footer {
@@ -151,10 +173,13 @@
 <body>
     <div class="container">
         <header>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="n8n_Automation_AGMA Logo" class="logo">
+            </div>
             <h1>n8n_Automation_AGMA</h1>
             <p class="subtitle">TikTok Content Automation Platform</p>
             <div class="account-badge">
-                🎵 @autopista_gma
+                @autopista_gma
             </div>
         </header>
 

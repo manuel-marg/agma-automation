@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - n8n_Automation_AGMA</title>
     <style>
+        :root {
+            --tiktok-cyan: #00f2ea;
+            --tiktok-pink: #fe2c55;
+            --tiktok-black: #000000;
+            --tiktok-white: #ffffff;
+            --tiktok-dark: #121212;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,8 +22,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #e0e0e0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            color: var(--tiktok-white);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -30,11 +38,26 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
+        .logo-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(0, 242, 234, 0.3), 0 0 60px rgba(254, 44, 85, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
         h1 {
             text-align: center;
-            color: #00f2ea;
+            color: var(--tiktok-white);
             margin-bottom: 10px;
             font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .subtitle {
@@ -47,13 +70,19 @@
         .section {
             margin-bottom: 30px;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.3);
             border-radius: 8px;
-            border-left: 4px solid #00f2ea;
+            border-left: 4px solid var(--tiktok-cyan);
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            border-left-color: var(--tiktok-pink);
+            background: rgba(0, 0, 0, 0.4);
         }
 
         .section h2 {
-            color: #00f2ea;
+            color: var(--tiktok-cyan);
             margin-bottom: 15px;
             font-size: 1.3rem;
         }
@@ -74,37 +103,52 @@
 
         .data-types {
             display: inline-block;
-            background: rgba(0, 242, 234, 0.1);
+            background: rgba(254, 44, 85, 0.15);
             padding: 2px 8px;
             border-radius: 4px;
-            color: #00f2ea;
+            color: var(--tiktok-pink);
             font-family: 'Courier New', monospace;
             font-size: 0.9em;
+            border: 1px solid rgba(254, 44, 85, 0.3);
         }
 
         .security-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(0, 255, 136, 0.1);
+            background: rgba(0, 242, 234, 0.15);
             padding: 8px 16px;
             border-radius: 6px;
-            color: #00ff88;
+            color: var(--tiktok-cyan);
             margin-top: 10px;
             font-weight: 600;
+            border: 1px solid rgba(0, 242, 234, 0.3);
         }
 
         .consent-box {
-            background: rgba(255, 193, 7, 0.1);
-            border-left: 4px solid #ffc107;
+            background: rgba(254, 44, 85, 0.1);
+            border-left: 4px solid var(--tiktok-pink);
             padding: 15px 20px;
             border-radius: 8px;
             margin-top: 15px;
         }
 
         .consent-box p {
-            color: #ffc107;
+            color: var(--tiktok-pink);
             margin: 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--tiktok-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--tiktok-pink);
         }
 
         footer {
@@ -119,6 +163,12 @@
 </head>
 <body>
     <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <div class="logo-container">
+            <img src="logo.jpg" alt="n8n_Automation_AGMA Logo" class="logo">
+        </div>
+
         <h1>Privacy Policy</h1>
         <p class="subtitle">n8n_Automation_AGMA</p>
 
