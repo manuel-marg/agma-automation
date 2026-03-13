@@ -159,6 +159,25 @@
             font-size: 0.85rem;
         }
 
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--tiktok-cyan);
+        }
+
+        .footer-divider {
+            color: #444;
+        }
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.8rem;
@@ -209,6 +228,11 @@
         </section>
 
         <footer>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span class="footer-divider">|</span>
+                <a href="terms.html">Terms of Service</a>
+            </div>
             <p>&copy; 2026 n8n_Automation_AGMA. All rights reserved.</p>
         </footer>
     </div>
